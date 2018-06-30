@@ -1,9 +1,16 @@
-<form action="<?php $_PHP_SELF ?>" method="post">
-    <!--    self -->
-    <h3>What can I search for you.</h3>
-    <input type="text" name="searchName" placeholder="Search By Name"><br><br>
-    <button type="search" name="search">Search</button>
-</form>
+<link rel="stylesheet" type="text/css" href="style1.css">
+
+<div class="searchform">
+	<form action="<?php $_PHP_SELF ?>" method="post">
+		<h4>What can I search for you</h4>
+		<input type="text" name="searchName" placeholder="Search By Name" autofocus=""><br><br>
+		<button type="search" name="search">Search</button>
+	</form>
+</div>
+
+<a href="home.php" class="backHome">go to home</a>
+<hr>
+
 
 <table width="100%" border="1px">
 
@@ -67,9 +74,4 @@
 		}
 	?>
 	</tbody>
- 
 </table>
-<div class="foot">
-	<footer><a href="home.php">go to home</a></footer>
-</div>
-										

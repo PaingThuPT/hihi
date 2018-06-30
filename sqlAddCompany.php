@@ -23,13 +23,5 @@ if (isset($_POST['add'])){
 	$company->addCompany($name, $type, $address, $phone);
 	}
 }
-//	add the new company
-
-elseif (isset($_GET['deleteid'])){
-	$id = $_GET['deleteid'];
-	$company->deleteCompany($id);
-	}
-//	deleting the company name
-
 header("location:home.php");
 ?>

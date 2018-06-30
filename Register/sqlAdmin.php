@@ -12,23 +12,18 @@ function vaild($data){
 }
 
 if (isset($_POST['save'])){
- print_r($_POST);
+ 	// print_r($_POST);
 	$name = vaild($_POST['name']);
 	$password = vaild($_POST['password']);
 	$email = vaild($_POST['email']);
 	$age = vaild($_POST['age']);
 	// echo "No I am stay in outside.";
 
-if ($name != "" && $password != "" && $email != "" && $age != ""){
+	if ($name != "" && $password != "" && $email != "" && $age != ""){
 	// echo "Creating in db.";
-
-	$admin->addAdmin($name, $password, $email, $age);
-
+		$admin->addAdmin($name, $password, $email, $age);
+		header("location:login.php");
 	}
-}
-
-	
-// header("location:../home.html");
-//go to add company 
+} 
 ?>
 <a href="../home.php">Go to home</a>

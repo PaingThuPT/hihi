@@ -1,4 +1,8 @@
-<h3>Welcome from Company list</h3>
+<h3>Welcome from Company Detail</h3>
+<a href="home.php" class="backHome">go back home</a>
+<hr>
+
+<link rel="stylesheet" type="text/css" href="style1.css">
 
 <table width="100%" border="1px">
 
@@ -54,7 +58,5 @@
 	</tbody>
  
 </table>
-<div class="foot">
-	<footer><a href="home.php">go to home</a></footer>
 </div>
 										

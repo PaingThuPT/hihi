@@ -1,30 +1,36 @@
-<div>
-							
-	<form action="sqlAddCompany.php" method="post">
-		
-		<div>
-			<label for="name">Name</label>
-			<input type="text" name="name" id="name" required="">
-		</div>
-		<div>
-			<label for="type">Type</label>
-			<input type="text" name="type" id="type" required="">
-		</div>
-		<div>
-			<label for="address">Address</label>
-			<textarea name="address" id="address" required=""></textarea>
-		</div>
-		<div>
-			<label for="phone">Phone</label>
-			<input type="text" name="phone" id="phone" required="">
-		</div>
-		
-		
-		<div class="form-group">
-			<button class="btn btn-add" name="add">Add</button>
-			<button type="reset" class="btn btn-default">Reset</button>
-		</div>
-
-	</form>
-
-</div>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add Company</title>
+	<link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>
+	<h2>Add new Company infomation</h2>
+	<div class="userform">				
+		<form action="sqlAddCompany.php" method="post">		
+		<!-- <form action="<?php $_PHP_SELF ?>" method="post"> -->
+			<div>
+				<label for="name">Name</label><br>
+				<input type="text" name="name" id="name" required="" placeholder="Name" autofocus="">
+			</div>
+			<div>
+				<label for="type">Type</label><br>
+				<input type="text" name="type" id="type" required="" placeholder="Type">
+			</div>
+			<div>
+				<label for="address">Address</label><br>
+				<textarea name="address" id="address" required="" placeholder="Address"></textarea>
+			</div>
+			<div>
+				<label for="phone">Phone</label><br>
+				<input type="text" name="phone" id="phone" required="" placeholder="Phone">
+			</div>
+			<div class="btn_group">
+				<button class="btn btn-add" name="add">Add</button><br>
+				<button type="reset" class="btn btn-default">Reset</button>
+			</div>
+		</form>
+		<a href="Register/Login.php">Go Back LogIn!</a>
+	</div>
+</body>
+</html>
